@@ -11,6 +11,9 @@
 
 	<link href="dashboard.css" rel="stylesheet">
 
+	<style>
+
+	</style>
 </head>
 <body>
 	<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
@@ -57,7 +60,7 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-            <h1 class="h2">Ethereum</h1>
+            <h1 class="h2">RandoCoin</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <!-- <div class="btn-group mr-2">
                 <button class="btn btn-sm btn-outline-secondary">Share</button>
@@ -72,147 +75,43 @@
 
           <div class="row">
           	
-          	<div class="col-md-6">
-          		<h3>Code Quality</h3>
-      			<canvas class="my-4" id="code-quality"></canvas>
+          	<div class="col-md-6 chart-parent">
+          		<h3>Code Trustworthiness</h3>
+          		<div>
+          			<span class="bar-trigger" style="display: block; cursor: pointer; background: #efefef; height: 2em; width: 100%; position: relative;">
+          				<span style="display: block; background: blue; opacity: .5; height: 2em; width: 60%;">
+      					<span style="position: absolute; left: 0; font-weight: bold; color: white;">&nbsp;6/10</span>
+          			</span>
+      			</div>
+      			<br/>
+      			<div class="detail-wrapper">
+  					<h5>Details</h5>
+      				<canvas  id="code-quality"></canvas>
+      			</div>
+      			
   			</div>
 
-  			<div class="col-md-6">
-          		<h3>Community Health</h3>
-      			<canvas class="my-4" id="chart-2"></canvas>
+  			<div class="col-md-6 chart-parent">
+          		<h3>Community Strength</h3>
+          		<div>
+          			<span class="bar-trigger" style="display: block; background: #efefef; height: 2em; width: 100%; position: relative;">
+          				<span style="display: block; background: blue; opacity: .5; height: 2em; width: 80%;">
+      					<span style="position: absolute; left: 0; font-weight: bold; color: white;">&nbsp;8/10</span>
+          			</span>
+      			</div>
+      			<br/>
+
+      			<div class="detail-wrapper">
+  					<h5>Details</h5>
+      				<canvas  id="community-health"></canvas>
+      			</div>
+      			
   			</div>
 
           </div>
           
 
-          <h2>Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          
         </main>
       </div>
     </div>
@@ -239,17 +138,52 @@
 		type: 'horizontalBar',
 		data: {
 			// labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-			datasets: [{
-				label: 'Dataset 1',
-				backgroundColor: color('#000000').alpha(0.5).rgbString(),
-				borderColor: '#000000',
-				borderWidth: 1,
-				data: [
-					5
-				]
-			}]
+			datasets: [
+				{
+					label: 'Activity Patterns',
+					backgroundColor: color('blue').alpha(0.5).rgbString(),
+					borderColor: 'blue',
+					borderWidth: 1,
+					data: [
+						30
+					]
+				},
+				{
+					label: 'Quality of Commits',
+					backgroundColor: color('red').alpha(0.5).rgbString(),
+					borderColor: 'red',
+					borderWidth: 1,
+					data: [
+						-40
+					]
+				},
+				{
+					label: 'Documentation',
+					backgroundColor: color('blue').alpha(0.5).rgbString(),
+					borderColor: 'blue',
+					borderWidth: 1,
+					data: [
+						80
+					]
+				}
+			]
 		},
 		options: {
+			scales : {
+				xAxes : [{
+					ticks: {
+			           min: -100,
+			           max: 100,
+			           callback: function(value) {
+			               return value + "%"
+			           },
+			           scaleLabel: {
+		                   display: true,
+		                   labelString: "Anomalous / Trustworthy"
+		                }
+			       }
+				}]
+			},
 			// Elements options apply to all of the options unless overridden in a dataset
 			// In this case, we are setting the border of each horizontal bar to be 2px wide
 			elements: {
@@ -258,15 +192,89 @@
 				}
 			},
 			responsive: true,
-			legend: {
-				position: 'right',
-			},
-			title: {
-				display: true,
-				text: 'Chart.js Horizontal Bar Chart'
-			}
+			// legend: {
+			// 	position: 'right',
+			// },
+			// title: {
+			// 	display: true,
+			// 	text: 'Chart.js Horizontal Bar Chart'
+			// }
 		}
 	});
+
+
+      var codeQuality = new Chart(document.getElementById("community-health"), {
+		type: 'horizontalBar',
+		data: {
+			// labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			datasets: [
+				{
+					label: 'Contributor Backgrounds',
+					backgroundColor: color('blue').alpha(0.5).rgbString(),
+					borderColor: 'blue',
+					borderWidth: 1,
+					data: [
+						90
+					]
+				},
+				{
+					label: 'Social Media Activity',
+					backgroundColor: color('blue').alpha(0.5).rgbString(),
+					borderColor: 'blue',
+					borderWidth: 1,
+					data: [
+						60
+					]
+				},
+				{
+					label: 'White Papers Published',
+					backgroundColor: color('red').alpha(0.5).rgbString(),
+					borderColor: 'red',
+					borderWidth: 1,
+					data: [
+						-10
+					]
+				}
+				
+			]
+		},
+		options: {
+			scales : {
+				xAxes : [{
+					ticks: {
+			           min: -100,
+			           max: 100,
+			           callback: function(value) {
+			               return value + "%"
+			           },
+			           scaleLabel: {
+		                   display: true,
+		                   labelString: "Anomalous / Trustworthy"
+		                }
+			       }
+				}]
+			},
+			// Elements options apply to all of the options unless overridden in a dataset
+			// In this case, we are setting the border of each horizontal bar to be 2px wide
+			elements: {
+				rectangle: {
+					borderWidth: 2,
+				}
+			},
+			responsive: true,
+			// legend: {
+			// 	position: 'right',
+			// },
+			// title: {
+			// 	display: true,
+			// 	text: 'Chart.js Horizontal Bar Chart'
+			// }
+		}
+	});
+
+      $('.bar-trigger').on('click', function(){
+      	$(this).closest('.chart-parent').find('.detail-wrapper').toggleClass('visible');
+      });
 
 
       var myChart = new Chart(ctx, {

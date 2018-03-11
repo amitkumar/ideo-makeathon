@@ -94,7 +94,18 @@ body {
 
 
 
-#chart-1 {
-  width: 10em;
-  height: 10em;
+
+
+.chart-parent canvas{
+
+  }
+.bar-trigger {
+  cursor: pointer;
+}
+.detail-wrapper {
+  transition: all .2s ease;  
+  opacity: 0;
+}
+.detail-wrapper.visible {
+  opacity: 1;
 }
